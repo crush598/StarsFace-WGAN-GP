@@ -9,7 +9,7 @@
 - ![image-20230103172542134](https://cdn.jsdelivr.net/gh/crush598/image@main/AI202301031800364.png)
 - 模型生成的人脸图像
 
-- ![WGAN_TEST_one](/Users/crush/Desktop/T3_latest/images/WGAN_TEST_one.png)
+- ![WGAN_TEST_one](https://cdn.jsdelivr.net/gh/crush598/image@main/AI202301031808451.png)
 
 ## Requirements
 
