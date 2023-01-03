@@ -1,0 +1,298 @@
+[2022 12/26 21:25:15] [   INFO] [utils.py] [project_preprocess] [ 39]: Namespace(config_file='configs/WGAN.yaml', generator=None, opts=[], separate=False)
+[2022 12/26 21:25:15] [   INFO] [utils.py] [project_preprocess] [ 42]: Loaded configuration file configs/WGAN.yaml
+[2022 12/26 21:25:15] [   INFO] [utils.py] [project_preprocess] [ 46]: Running with config:
+DATALOADER:
+  BATCH_SIZE: 32
+  NUM_WORKERS: 0
+DATASET:
+  NAME: dataset/stars
+  TRAIN_TEST_RATIO: 1.0
+IMAGE:
+  CHANNEL: 3
+  HEIGHT: 64
+  NUMBER: 10
+  PIXEL_MEAN: (0.5, 0.5, 0.5)
+  PIXEL_STD: (0.5, 0.5, 0.5)
+  SAVE_NUMBER: 64
+  SAVE_PATH: ./images
+  SAVE_ROW_NUMBER: 8
+  SEPARATE: False
+  WIDTH: 64
+LOG_CONFIGURATION: config/logging.conf
+MODEL:
+  CHECKPOINT_DIR: checkpoints
+  D:
+    DIMENSION: 256
+    PATH: 
+  DEVICE: cuda
+  G:
+    DIMENSION: 1024
+    INPUT_SIZE: 100
+    PATH: 
+  NAME: WGAN
+  WGAN:
+    CRITIC_ITERS: 5
+    GENERATOR_ITERS: 40000
+    IC: False
+    LAMBDA: 10
+    WEIGHT_CLIPING_LIMIT: 0.01
+OUTPUT_DIR: log
+PROJECT_NAME: WGAN_TEST_one
+SOLVER:
+  BASE_LR: 0.0001
+  BETAS: (0.5, 0.999)
+  CHECKPOINT_FREQ: 500
+  EPOCHS: 300
+  EVALUATE_BATCH: 128
+  EVALUATE_ITERATION: 125
+  WEIGHT_DECAY: 1e-05
+WALKING_LATENT_SPACE:
+  IMAGE_FPS: 10
+  IMAGE_NUMBER: 16
+  IMAGE_ROW_NUMBER: 4
+  STEP: 50
+[2022 12/26 21:45:41] [   INFO] [logger.py] [     log] [101]: Generator iteration: 499/40000, g_loss: -5780.54541015625
+[2022 12/26 21:45:42] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/26 21:45:43] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/26 21:58:08] [   INFO] [logger.py] [     log] [101]: Generator iteration: 999/40000, g_loss: -8266.763671875
+[2022 12/26 21:58:08] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/26 21:58:10] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/26 22:11:00] [   INFO] [logger.py] [     log] [101]: Generator iteration: 1499/40000, g_loss: -9888.486328125
+[2022 12/26 22:11:00] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/26 22:11:02] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/26 22:24:14] [   INFO] [logger.py] [     log] [101]: Generator iteration: 1999/40000, g_loss: -8375.935546875
+[2022 12/26 22:24:15] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/26 22:24:16] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/26 22:37:54] [   INFO] [logger.py] [     log] [101]: Generator iteration: 2499/40000, g_loss: -12214.533203125
+[2022 12/26 22:37:54] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/26 22:37:56] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/26 22:51:42] [   INFO] [logger.py] [     log] [101]: Generator iteration: 2999/40000, g_loss: -7472.966796875
+[2022 12/26 22:51:43] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/26 22:51:45] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/26 23:05:15] [   INFO] [logger.py] [     log] [101]: Generator iteration: 3499/40000, g_loss: -9871.55078125
+[2022 12/26 23:05:16] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/26 23:05:18] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/26 23:18:41] [   INFO] [logger.py] [     log] [101]: Generator iteration: 3999/40000, g_loss: -12491.86328125
+[2022 12/26 23:18:42] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/26 23:18:43] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/26 23:32:09] [   INFO] [logger.py] [     log] [101]: Generator iteration: 4499/40000, g_loss: -8689.923828125
+[2022 12/26 23:32:09] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/26 23:32:10] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/26 23:45:29] [   INFO] [logger.py] [     log] [101]: Generator iteration: 4999/40000, g_loss: -14534.9697265625
+[2022 12/26 23:45:29] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/26 23:45:30] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/26 23:57:34] [   INFO] [logger.py] [     log] [101]: Generator iteration: 5499/40000, g_loss: -6067.30029296875
+[2022 12/26 23:57:34] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/26 23:57:36] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 00:09:49] [   INFO] [logger.py] [     log] [101]: Generator iteration: 5999/40000, g_loss: -12249.9384765625
+[2022 12/27 00:09:49] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 00:09:50] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 00:22:15] [   INFO] [logger.py] [     log] [101]: Generator iteration: 6499/40000, g_loss: -9275.412109375
+[2022 12/27 00:22:16] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 00:22:18] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 00:35:48] [   INFO] [logger.py] [     log] [101]: Generator iteration: 6999/40000, g_loss: -12620.4921875
+[2022 12/27 00:35:49] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 00:35:51] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 00:49:31] [   INFO] [logger.py] [     log] [101]: Generator iteration: 7499/40000, g_loss: -12080.736328125
+[2022 12/27 00:49:31] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 00:49:33] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 01:03:02] [   INFO] [logger.py] [     log] [101]: Generator iteration: 7999/40000, g_loss: -13835.0146484375
+[2022 12/27 01:03:03] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 01:03:05] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 01:17:04] [   INFO] [logger.py] [     log] [101]: Generator iteration: 8499/40000, g_loss: -15809.45703125
+[2022 12/27 01:17:04] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 01:17:06] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 01:30:41] [   INFO] [logger.py] [     log] [101]: Generator iteration: 8999/40000, g_loss: -13601.80859375
+[2022 12/27 01:30:42] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 01:30:44] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 01:44:27] [   INFO] [logger.py] [     log] [101]: Generator iteration: 9499/40000, g_loss: -12525.4404296875
+[2022 12/27 01:44:28] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 01:44:31] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 01:58:18] [   INFO] [logger.py] [     log] [101]: Generator iteration: 9999/40000, g_loss: -15020.572265625
+[2022 12/27 01:58:19] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 01:58:20] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 02:11:57] [   INFO] [logger.py] [     log] [101]: Generator iteration: 10499/40000, g_loss: -13248.927734375
+[2022 12/27 02:11:58] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 02:11:59] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 02:25:47] [   INFO] [logger.py] [     log] [101]: Generator iteration: 10999/40000, g_loss: -12682.615234375
+[2022 12/27 02:25:48] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 02:25:50] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 02:39:21] [   INFO] [logger.py] [     log] [101]: Generator iteration: 11499/40000, g_loss: -12908.1650390625
+[2022 12/27 02:39:22] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 02:39:23] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 02:53:13] [   INFO] [logger.py] [     log] [101]: Generator iteration: 11999/40000, g_loss: -13070.234375
+[2022 12/27 02:53:13] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 02:53:15] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 03:06:48] [   INFO] [logger.py] [     log] [101]: Generator iteration: 12499/40000, g_loss: -16824.9296875
+[2022 12/27 03:06:48] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 03:06:50] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 03:20:18] [   INFO] [logger.py] [     log] [101]: Generator iteration: 12999/40000, g_loss: -16470.728515625
+[2022 12/27 03:20:18] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 03:20:20] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 03:33:54] [   INFO] [logger.py] [     log] [101]: Generator iteration: 13499/40000, g_loss: -12620.5263671875
+[2022 12/27 03:33:55] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 03:33:57] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 03:47:40] [   INFO] [logger.py] [     log] [101]: Generator iteration: 13999/40000, g_loss: -15966.021484375
+[2022 12/27 03:47:40] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 03:47:42] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 04:01:21] [   INFO] [logger.py] [     log] [101]: Generator iteration: 14499/40000, g_loss: -17602.943359375
+[2022 12/27 04:01:22] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 04:01:24] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 04:15:08] [   INFO] [logger.py] [     log] [101]: Generator iteration: 14999/40000, g_loss: -15703.05078125
+[2022 12/27 04:15:08] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 04:15:10] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 04:28:37] [   INFO] [logger.py] [     log] [101]: Generator iteration: 15499/40000, g_loss: -14077.505859375
+[2022 12/27 04:28:38] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 04:28:39] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 04:42:12] [   INFO] [logger.py] [     log] [101]: Generator iteration: 15999/40000, g_loss: -16040.314453125
+[2022 12/27 04:42:13] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 04:42:15] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 04:55:28] [   INFO] [logger.py] [     log] [101]: Generator iteration: 16499/40000, g_loss: -15841.119140625
+[2022 12/27 04:55:29] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 04:55:31] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 05:09:04] [   INFO] [logger.py] [     log] [101]: Generator iteration: 16999/40000, g_loss: -17215.67578125
+[2022 12/27 05:09:05] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 05:09:06] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 05:22:45] [   INFO] [logger.py] [     log] [101]: Generator iteration: 17499/40000, g_loss: -20837.5625
+[2022 12/27 05:22:46] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 05:22:48] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 05:36:06] [   INFO] [logger.py] [     log] [101]: Generator iteration: 17999/40000, g_loss: -16154.2841796875
+[2022 12/27 05:36:06] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 05:36:08] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 05:48:03] [   INFO] [logger.py] [     log] [101]: Generator iteration: 18499/40000, g_loss: -22273.455078125
+[2022 12/27 05:48:03] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 05:48:05] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 06:00:03] [   INFO] [logger.py] [     log] [101]: Generator iteration: 18999/40000, g_loss: -17620.5078125
+[2022 12/27 06:00:03] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 06:00:05] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 06:12:02] [   INFO] [logger.py] [     log] [101]: Generator iteration: 19499/40000, g_loss: -21502.2734375
+[2022 12/27 06:12:03] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 06:12:04] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 06:24:12] [   INFO] [logger.py] [     log] [101]: Generator iteration: 19999/40000, g_loss: -17207.09375
+[2022 12/27 06:24:13] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 06:24:15] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 06:36:09] [   INFO] [logger.py] [     log] [101]: Generator iteration: 20499/40000, g_loss: -14427.6484375
+[2022 12/27 06:36:10] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 06:36:11] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 06:48:10] [   INFO] [logger.py] [     log] [101]: Generator iteration: 20999/40000, g_loss: -23609.03515625
+[2022 12/27 06:48:11] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 06:48:13] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 07:00:14] [   INFO] [logger.py] [     log] [101]: Generator iteration: 21499/40000, g_loss: -23112.0859375
+[2022 12/27 07:00:15] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 07:00:16] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 07:12:21] [   INFO] [logger.py] [     log] [101]: Generator iteration: 21999/40000, g_loss: -24314.7265625
+[2022 12/27 07:12:22] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 07:12:23] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 07:24:26] [   INFO] [logger.py] [     log] [101]: Generator iteration: 22499/40000, g_loss: -22355.87109375
+[2022 12/27 07:24:27] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 07:24:29] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 07:36:27] [   INFO] [logger.py] [     log] [101]: Generator iteration: 22999/40000, g_loss: -25090.259765625
+[2022 12/27 07:36:28] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 07:36:30] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 07:48:29] [   INFO] [logger.py] [     log] [101]: Generator iteration: 23499/40000, g_loss: -23827.748046875
+[2022 12/27 07:48:30] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 07:48:32] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 08:00:27] [   INFO] [logger.py] [     log] [101]: Generator iteration: 23999/40000, g_loss: -29218.90625
+[2022 12/27 08:00:27] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 08:00:29] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 08:12:26] [   INFO] [logger.py] [     log] [101]: Generator iteration: 24499/40000, g_loss: -28135.255859375
+[2022 12/27 08:12:26] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 08:12:28] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 08:24:19] [   INFO] [logger.py] [     log] [101]: Generator iteration: 24999/40000, g_loss: -29943.318359375
+[2022 12/27 08:24:19] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 08:24:21] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 08:36:15] [   INFO] [logger.py] [     log] [101]: Generator iteration: 25499/40000, g_loss: -31721.068359375
+[2022 12/27 08:36:15] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 08:36:17] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 08:48:13] [   INFO] [logger.py] [     log] [101]: Generator iteration: 25999/40000, g_loss: -26055.775390625
+[2022 12/27 08:48:13] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 08:48:16] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 09:00:05] [   INFO] [logger.py] [     log] [101]: Generator iteration: 26499/40000, g_loss: -28060.97265625
+[2022 12/27 09:00:05] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 09:00:06] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 09:12:05] [   INFO] [logger.py] [     log] [101]: Generator iteration: 26999/40000, g_loss: -36092.13671875
+[2022 12/27 09:12:05] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 09:12:07] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 09:24:01] [   INFO] [logger.py] [     log] [101]: Generator iteration: 27499/40000, g_loss: -34167.05078125
+[2022 12/27 09:24:02] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 09:24:03] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 09:36:00] [   INFO] [logger.py] [     log] [101]: Generator iteration: 27999/40000, g_loss: -34613.08203125
+[2022 12/27 09:36:01] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 09:36:04] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 09:48:00] [   INFO] [logger.py] [     log] [101]: Generator iteration: 28499/40000, g_loss: -40842.49609375
+[2022 12/27 09:48:00] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 09:48:02] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 09:59:58] [   INFO] [logger.py] [     log] [101]: Generator iteration: 28999/40000, g_loss: -38214.3984375
+[2022 12/27 09:59:58] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 10:00:00] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 10:11:49] [   INFO] [logger.py] [     log] [101]: Generator iteration: 29499/40000, g_loss: -33893.43359375
+[2022 12/27 10:11:50] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 10:11:52] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 10:23:46] [   INFO] [logger.py] [     log] [101]: Generator iteration: 29999/40000, g_loss: -37295.84375
+[2022 12/27 10:23:47] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 10:23:48] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 10:35:42] [   INFO] [logger.py] [     log] [101]: Generator iteration: 30499/40000, g_loss: -37914.234375
+[2022 12/27 10:35:43] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 10:35:45] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 10:47:46] [   INFO] [logger.py] [     log] [101]: Generator iteration: 30999/40000, g_loss: -44721.3046875
+[2022 12/27 10:47:47] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 10:47:48] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 10:59:48] [   INFO] [logger.py] [     log] [101]: Generator iteration: 31499/40000, g_loss: -47977.66015625
+[2022 12/27 10:59:49] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 10:59:51] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 11:12:17] [   INFO] [logger.py] [     log] [101]: Generator iteration: 31999/40000, g_loss: -46770.125
+[2022 12/27 11:12:18] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 11:12:20] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 11:25:33] [   INFO] [logger.py] [     log] [101]: Generator iteration: 32499/40000, g_loss: -46204.6953125
+[2022 12/27 11:25:34] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 11:25:35] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 11:39:14] [   INFO] [logger.py] [     log] [101]: Generator iteration: 32999/40000, g_loss: -51141.03125
+[2022 12/27 11:39:14] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 11:39:16] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 11:52:49] [   INFO] [logger.py] [     log] [101]: Generator iteration: 33499/40000, g_loss: -52877.74609375
+[2022 12/27 11:52:49] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 11:52:51] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 12:06:27] [   INFO] [logger.py] [     log] [101]: Generator iteration: 33999/40000, g_loss: -51888.265625
+[2022 12/27 12:06:27] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 12:06:29] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 12:19:57] [   INFO] [logger.py] [     log] [101]: Generator iteration: 34499/40000, g_loss: -50175.09375
+[2022 12/27 12:19:58] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 12:20:00] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 12:33:20] [   INFO] [logger.py] [     log] [101]: Generator iteration: 34999/40000, g_loss: -59643.76171875
+[2022 12/27 12:33:21] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 12:33:23] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 12:46:48] [   INFO] [logger.py] [     log] [101]: Generator iteration: 35499/40000, g_loss: -58079.0
+[2022 12/27 12:46:48] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 12:46:50] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 13:00:21] [   INFO] [logger.py] [     log] [101]: Generator iteration: 35999/40000, g_loss: -60211.0078125
+[2022 12/27 13:00:22] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 13:00:23] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 13:13:55] [   INFO] [logger.py] [     log] [101]: Generator iteration: 36499/40000, g_loss: -59555.5390625
+[2022 12/27 13:13:55] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 13:13:57] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 13:27:26] [   INFO] [logger.py] [     log] [101]: Generator iteration: 36999/40000, g_loss: -62323.296875
+[2022 12/27 13:27:27] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 13:27:28] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 13:40:55] [   INFO] [logger.py] [     log] [101]: Generator iteration: 37499/40000, g_loss: -62599.5078125
+[2022 12/27 13:40:55] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 13:40:57] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 13:54:29] [   INFO] [logger.py] [     log] [101]: Generator iteration: 37999/40000, g_loss: -67027.3984375
+[2022 12/27 13:54:30] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 13:54:31] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 14:08:03] [   INFO] [logger.py] [     log] [101]: Generator iteration: 38499/40000, g_loss: -67693.390625
+[2022 12/27 14:08:04] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 14:08:05] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 14:21:59] [   INFO] [logger.py] [     log] [101]: Generator iteration: 38999/40000, g_loss: -68211.375
+[2022 12/27 14:21:59] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 14:22:01] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 14:36:00] [   INFO] [logger.py] [     log] [101]: Generator iteration: 39499/40000, g_loss: -77187.0625
+[2022 12/27 14:36:01] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 14:36:02] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 14:50:06] [   INFO] [logger.py] [     log] [101]: Generator iteration: 39999/40000, g_loss: -71258.2109375
+[2022 12/27 14:50:06] [   INFO] [logger.py] [     log] [101]: successfully save images
+[2022 12/27 14:50:08] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 14:50:08] [   INFO] [logger.py] [     log] [101]: Total time: 62690.85
+[2022 12/27 14:50:10] [   INFO] [logger.py] [     log] [101]: Models save to checkpoints/WGAN_TEST_one
+[2022 12/27 14:50:10] [   INFO] [logger.py] [     log] [101]: successfully save losses
+[2022 12/27 14:50:25] [   INFO] [logger.py] [     log] [101]: Gif saved to log/WGAN_TEST_one/WGAN_TEST_one_process.gif
+[2022 12/27 14:50:39] [   INFO] [logger.py] [     log] [101]: Walking latent space done, save to log/WGAN_TEST_one/walking_latent_space.gif

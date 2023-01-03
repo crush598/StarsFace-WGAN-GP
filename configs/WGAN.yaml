@@ -1,0 +1,13 @@
+
+PROJECT_NAME: WGAN_TEST_one
+
+DATASET:
+  NAME: dataset/stars
+  TRAIN_TEST_RATIO: 1.0
+
+MODEL:
+  NAME: WGAN
+
+SOLVER:
+  BASE_LR: 1e-4
+  BETAS: (0.5,0.999)
